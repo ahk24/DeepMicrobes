@@ -1,17 +1,19 @@
-name: DeepMicrobes
+name: DeepMicrobesPyTorch
 channels:
   - conda-forge
+  - pytorch
   - bioconda
   - defaults
 dependencies:
-  - tensorflow-gpu=1.9.0
-  - tensorboard=1.9.0
-  - tensorflow=1.9.0
-  - tensorflow-base=1.9.0
-  - absl-py=0.3.0
-  - biopython=1.70
-  - numpy=1.13.3
-  - cudnn=7.1.2
-  - h5py=2.7.1
-  - hdf5=1.8.18
-  - seqtk=1.3
+  - pytorch
+  - torchvision
+  - torchaudio
+  - cudatoolkit=10.2  # Adjust version as per your CUDA version
+  - tensorboard
+  - absl-py
+  - biopython
+  - numpy
+  - cudnn
+  - h5py
+  - hdf5
+  - seqtk
